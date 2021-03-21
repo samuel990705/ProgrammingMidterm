@@ -51,7 +51,7 @@ public class Scoreboard : MonoBehaviour
         G.GetComponent<RectTransform>().sizeDelta = new Vector2(600, 75);
         G.GetComponent<RectTransform>().localScale = new Vector3(1, 1, 1);
 
-        for (int i = 0; i < 10; i++)//
+        for (int i = 0; i < Mathf.Clamp(data.Length,0,10); i++)//
         {
             GameObject GO = new GameObject();
             GO.transform.SetParent(this.transform);

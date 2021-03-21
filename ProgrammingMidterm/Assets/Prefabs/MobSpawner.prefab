@@ -44,3 +44,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mob1: {fileID: 866216550346377332, guid: 336ee823da13e4ffda8a4967e806c22e, type: 3}
+  mob2: {fileID: 927296646129644712, guid: 2a9ba43c8b9864a9e81d034727164eca, type: 3}
+  mob3: {fileID: 3011547340779202069, guid: 4a47864e93f95440ab061e9da42f1037, type: 3}

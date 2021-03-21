@@ -5,9 +5,11 @@ using UnityEngine;
 public class MobSpawner : MonoBehaviour
 {
     private float timer;
-    private int randInt;
+    private float randFloat;
 
     public GameObject mob1;
+    public GameObject mob2;
+    public GameObject mob3;
 
     void Start()
     {
@@ -22,12 +24,18 @@ public class MobSpawner : MonoBehaviour
         if (timer < 0)
         {
             timer = Random.Range(3f, 8f);//reset timer
-            randInt = Random.Range(0, 1);
-            switch (randInt)
+            randFloat = Random.Range(0f, 1f);
+            if (randFloat < 0.15)//15% chance to spawn big ogre
             {
-                case 0:
-                    Instantiate(mob1, transform.position, Quaternion.identity);
-                    break;
+                Instantiate(mob3, transform.position, Quaternion.identity);
+            }
+            else if (randFloat < 0.4)//25% chance of spawning medium zombie
+            {
+                Instantiate(mob2, transform.position, Quaternion.identity);
+            }
+            else//60% chance of small slime
+            {
+                Instantiate(mob1, transform.position, Quaternion.identity);
             }
         }
     }

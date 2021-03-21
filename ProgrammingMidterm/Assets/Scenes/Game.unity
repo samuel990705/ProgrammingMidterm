@@ -845,7 +845,7 @@ MonoBehaviour:
   health: 0
   score: 0
   animator: {fileID: 819186393}
-  hurtSFX: {fileID: 8300000, guid: 7b1ffb476568f4ca79e1b1a84e26ce39, type: 3}
+  hurtSFX: {fileID: 8300000, guid: 4274693f8854f4f2781aaf2f45e2e686, type: 3}
   startSFX: {fileID: 8300000, guid: 3cf4cdf66b62b42eb8942080ee3c358d, type: 3}
 --- !u!95 &819186393
 Animator:

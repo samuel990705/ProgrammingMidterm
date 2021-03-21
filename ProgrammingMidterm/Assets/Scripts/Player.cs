@@ -99,7 +99,7 @@ public class Player : MonoBehaviour
         if (health <= 0)
         {
             //write new score into text file
-            string s = "\n"+System.DateTime.Now.ToString("yyyy/MM/dd mm:ss") + "," + score;
+            string s = "\n"+System.DateTime.Now.ToString("yyyy/MM/dd HH:mm") + "," + score;
             string path = Application.dataPath + "/scoreboard.txt";
             File.AppendAllText(path, s);
 
