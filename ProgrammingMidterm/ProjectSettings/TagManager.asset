@@ -9,6 +9,8 @@ TagManager:
   - Mob
   - ActiveGun
   - UI
+  - Gun
+  - Heart
   layers:
   - Default
   - TransparentFX

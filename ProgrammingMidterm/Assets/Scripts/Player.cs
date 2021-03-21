@@ -23,6 +23,7 @@ public class Player : MonoBehaviour
     private AudioSource audioSource;
     public AudioClip hurtSFX;//audio played when player takes damage
     public AudioClip startSFX;//audio played at the very start
+    public AudioClip heartSFX;//audio played when a heart is picked up
 
     private void Awake()
     {
@@ -126,6 +127,13 @@ public class Player : MonoBehaviour
             health--;//decrement health
             audioSource.PlayOneShot(hurtSFX, 0.7F);//play hurt SFX
 
+        }
+
+        if(collision.collider.tag == "Heart")
+        {
+            health++;
+            audioSource.PlayOneShot(heartSFX, 0.7F);//play hurt SFX
+            Destroy(collision.gameObject);
         }
 
     }
