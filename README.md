@@ -24,3 +24,4 @@ Credits
 - Mob sprites: https://0x72.itch.io/16x16-dungeon-tileset
 - Gun SFX: Gun SFX were taken from Fortnite
 - Mob: Mob SFX were taken from Minecraft
+- Background music: From Tron Legacy by Daft Punk
